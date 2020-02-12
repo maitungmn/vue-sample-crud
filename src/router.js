@@ -1,8 +1,9 @@
 import Vue from "vue";
 import Router from "vue-router";
-import Home from "@/pages/Home.vue";
 
+import Home from "@/pages/Home.vue";
 import Signin from "@/pages/Signin.vue";
+import Howler from "@/pages/Howler.vue";
 
 import AuthGuard from "@/middlewares/AuthGuard";
 
@@ -22,6 +23,12 @@ export default new Router({
       path: "/signin",
       name: "Signin",
       component: Signin
+    }
+    },
+    {
+      path: "/howler",
+      name: "Howler",
+      component: Howler
     }
   ]
 });
